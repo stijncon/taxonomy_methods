@@ -1,0 +1,725 @@
+{
+    # Quantitative morphology
+    "quant_morph": [
+        r"\bmeasur(?:e|ed|es|ing|ement|ements)?\b",
+        r"\bmeristic\b",
+        r"\bmm\b",
+        r"\bcalliper\b",
+        r"\blength\b",
+        r"\bwidth\b",
+        r"\bmean\b",
+        r"\bmorphometric(?:s)?\b"
+    ],
+    # Interbreeding morphology
+    "interbr_morph": [
+        r"\bgenital(?:s|ia)?\b",
+        r"\bgenitalia\b",
+        r"\bcopulatory\b",
+        r"\baedeagus\b",
+        r"\bspermatheca\b",
+        r"\bclaspers\b",
+        r"\bgonopore\b",
+        r"\bepandrium\b",
+        r"\bcerci\b",
+        r"\bpheromone glands\b",
+        r"\bhemipenes\b",
+        r"\bcloacal morphology\b",
+        r"\boviductal\b",
+        r"\bpollen\b",
+        r"\bstyle\b",
+        r"\bgonopodium\b",
+        r"\bbreeding tubercles\b",
+        r"\begg(?:s)?\b",
+        r"\bpenis\b",
+        r"\bdart sac\b",
+        r"\boviduct structure\b",
+        r"\bspermatophore(?:s)?\b",
+        r"\bvagina(?:l)?\b",
+        r"\bclitellum\b",
+        r"\bsperm\b"
+    ],
+    # Color and pattern
+    "color_pattern": [
+        r"\bcolou?r\b",
+        r"\bpattern\b",
+        r"\bpigmentation\b",
+        r"\bhue\b",
+        r"\brown(?:ish)?\b",
+        # r"\byellow(?:ish)?\b",
+        # r"\bred(?:dish)?\b",
+        # r"\bblue(?:ish)?\b",
+        # r"\bgreen(?:ish)?\b",
+        # r"\bblack(?:ish)?\b",
+        # r"\bwhite(?:ish)?\b",
+        # r"\bgray(?:ish)?\b",
+        # r"\bgrey(?:ish)?\b",
+        r"\bpurple(?:ish)?\b",
+        r"\bpink(?:ish)?\b",
+        r"\borange(?:ish)?\b",
+        r"\bviolet\b",
+        r"\bcream(?:y)?\b",
+        r"\btan\b",
+        r"\bbeige\b",
+        r"\bspots?\b",
+        r"\bstrip(?:e|ed|ing)?\b",
+        r"\bdots?\b",
+        r"\bmottled\b",
+        r"\bmarbled\b",
+        r"\bblotches?\b",
+        r"\bpatch(?:es|y)?\b",
+        r"\bfreckles?\b",
+        # r"\bbands?\b",
+        r"\bswirls?\b",
+        r"\bzigzag(?:s)?\b",
+        r"\bcheckered\b",
+        # r"\bshaded\b",
+        r"\breticulated\b",
+        r"\bbright(?:ly)?\b",
+        # r"\bdeep\b",
+        r"\bdull\b",
+        r"\bfaint\b",
+        r"\bintense\b",
+        r"\bmatte\b",
+        r"\bopaque\b",
+        # r"\btranslucent\b"
+    ],
+    # Shape
+    "shape": [
+        # r"\bshape\b",
+        r"\boutline\b",
+        # r"\bform\b",
+        r"\bcontour\b",
+        r"\bbesides\b",
+        # r"\bopposite\b",
+        # r"\badjacent\b",
+        r"\brounded\b",
+        r"\bcircular\b",
+        r"\boval\b",
+        r"\belliptical\b",
+        r"\boblong\b",
+        r"\bspherical\b",
+        r"\bconical\b",
+        # r"\bcylindrical\b",
+        r"\btapered\b",
+        r"\btriangular\b",
+        r"\bpyramidal\b",
+        # r"\brectangular\b",
+        # r"\bsquare\b",
+        r"\bcurved\b",
+        r"\bangular\b",
+        # r"\bflat\b",
+        r"\blobed\b",
+        r"\bindented\b"
+    ],
+    # Texture
+    "texture": [
+        r"\btexture\b",
+        r"\bsmooth\b",
+        r"\brough\b",
+        r"\bgranular\b",
+        r"\bscaly\b"
+    ],
+    # Ultrastructure
+    "ultrastruct": [
+        r"\bultrastructure\b",
+        r"\bnanostructure\b",
+        r"\bsubcellular\b"
+    ],
+    # Acoustic
+    "acoustic": [
+        r"\bacoustic\b",
+        r"\bcall\b",
+        r"\bvocal(?:ization|ize|s|izing)?\b",
+        r"\bmicrophone\b",
+        r"\boscillogram(?:s)?\b",
+        r"\bspectral analys(?:is|es)?\b",
+        r"\bnote duration(?:s)?\b",
+        r"\bspectrogram(?:s)?\b",
+        r"\bfrequency analys(?:is|es)?\b",
+        r"\btimbre\b",
+        r"\bpitch\b",
+        r"\bamplitude\b",
+        r"\bwavelength\b",
+        r"\bdB(?: SPL)?\b",
+        r"\bsignal-to-noise ratio\b",
+        r"\bacoustic spectrum\b",
+        r"\brecorder(?:s)?\b",
+        r"\bsonograph(?:y|s)?\b",
+        r"\bcommunication\b",
+        r"\bsignal\b",
+        r"\brhythmic\b",
+        r"\bchirp(?:s)?\b",
+        r"\btrill(?:s)?\b",
+        r"\bwhistle(?:s)?\b",
+        r"\bpulse(?:s)?\b",
+        r"\bclick(?:s)?\b",
+        r"\becolocation\b",
+        r"\bsonar\b"
+    ],
+    # Feeding
+    "feeding": [
+        r"\bfeeding\b",
+        r"\bdiet\b",
+        r"\bforaging\b",
+        r"\bprey\b",
+        r"\bfood\b",
+        r"\bcarnivor(?:e|ous)\b",
+        r"\bherbivor(?:e|ous)\b",
+        r"\bomnivor(?:e|ous)\b",
+        r"\binsectivor(?:e|ous)\b",
+        r"\bpiscivor(?:e|ous)\b",
+        r"\bfrugivor(?:e|ous)\b",
+        r"\bnectarivor(?:e|ous)\b",
+        r"\bdetritivor(?:e|ous)\b",
+        r"\bsaprophag(?:e|ous)\b",
+        r"\bgranivor(?:e|ous)\b",
+        r"\bfungivor(?:e|ous)\b"
+    ],
+    # Mating
+    "mating": [
+        r"\bmating\b",
+        r"\bcourtship\b",
+        r"\bbreeding\b",
+        r"\bcompetition\b",
+        r"\bseasonal breeding\b",
+        r"\bmonogam(?:y|ous)\b",
+        r"\bpolygam(?:y|ous)\b",
+        r"\bpolyandry\b",
+        r"\bpolygyny\b",
+        r"\bpromiscuity\b",
+        r"\bharem\b",
+        r"\bmate guarding\b"
+    ],
+    # Ecology
+    "ECOLOGY": [
+        r"\becology\b",
+        r"\bhabitat\b",
+        r"\benvironment\b",
+        r"\bniche\b",
+        r"\becosystem\b"
+    ],
+    # Imaging
+    "IMAGING": [
+        r"\bmicroscop(?:e|es|y)\b",
+        r"\bimaging\b",
+        r"\bphotograph(?:s|y)?\b",
+        r"\bcamera\b",
+        r"\bphotocamera\b",
+        r"\bleica\b",
+        r"\b(?:c)anon\b",
+        r"\bSEM\b",  # Scanning Electron Microscopy
+        r"\bTEM\b",  # Transmission Electron Microscopy
+
+
+
+        r"\bhigh-resolution\b",
+        r"\b3D imaging\b",
+        r"\btomography\b",
+        r"\bCT scan(?:s)?\b",
+        r"\bMRI\b",
+        
+        # Cameras and equipment
+        r"\bDSLR\b",
+        r"\bmirrorless\b",
+        r"\blens(?:es)?\b",
+        r"\bzoomed\b",
+    
+        
+        # Image processing
+        r"\bimage stack(?:s|ing)?\b",
+        r"\bimage resolution\b",
+        r"\bpixel density\b",
+        r"\bcolor adjustment\b",
+        r"\b3D reconstruction\b",
+    ],
+    #Sampling
+    "SAMPLING": [
+        r"\btrap\b",
+        r"\bnet\b",
+        r"\bdragging\b",
+        r"\blighttrap\b",
+        r"\bdredge\b",
+        r"\bsled\b",
+        r"\bmanual capture\b",
+        r"\bbeating sheet\b",
+        r"\bsieve\b",
+        # Additional sampling methods
+        r"\bpitfall trap(?:s)?\b",
+        r"\bmalaise trap(?:s)?\b",
+        r"\bflight intercept trap(?:s)?\b",
+        r"\btullgren funnel(?:s)?\b",
+        r"\bsuction sampler(?:s)?\b",
+        r"\bhand collection\b",
+        r"\bcollected by hand\b",
+        r"\bsweep(?:ing)? net(?:s)?\b",
+        r"\bsampling quadrat(?:s)?\b",
+        r"\btransect sampling\b",
+        r"\bcore sampler(?:s)?\b",
+        r"\bplankton net(?:s)?\b",
+        r"\btrawl(?:ing|s)?\b",
+        r"\bgrab sampler(?:s)?\b",
+        # Specific sampling environments
+        r"\bcanopy fogging\b",
+        r"\bstream kick\b",
+        r"\bstream-kick\b",
+        # Descriptors and processes
+        r"\bsampling effort\b",
+        r"\bsampling method(?:s)?\b",
+        r"\bsampling gear\b",
+        r"\bcollection method(?:s)?\b",
+        r"\bsampling device(?:s)?\b",
+        r"\bsampling protocol(?:s)?\b"
+    ],
+    # Storage
+    "STORAGE": [
+        # General terms
+        r"\bfixed\b",
+        r"\bpreparation\b",
+        r"\bethanol\b",
+        # Preservation methods
+        r"\bformalin\b",
+        r"\bfreezing\b",
+        r"\bfrozen\b",
+        r"\bcryopreservation\b",
+        r"\bdrying\b",
+        r"\bdried\b",
+        r"\bfreeze-drying\b",
+        r"\bstored in alcohol\b",
+        r"\bpinned\b",
+        r"\bmounted\b",
+        r"\bparaffin\b",
+        # Storage materials
+        r"\bvial(?:s)?\b",
+        r"\bjar(?:s)?\b",
+        r"\bcontainer(?:s)?\b",
+        r"\btube(?:s)?\b",
+        r"\bbox(?:es)?\b",
+        # Storage locations
+        r"\b-20°C\b",
+        r"\b-80°C\b"
+    ],
+    # Phenotypic non-phylogenetic methods
+    "phen_nonphylo": [
+        # General statistical methods
+        r"\bPCA\b",  # Principal Component Analysis
+        r"\bprincipal component(?:s)?\b",
+        r"\bregression\b",
+        r"\bANOVA\b",  # Analysis of Variance
+        r"\bMANOVA\b",  # Multivariate Analysis of Variance
+        r"\bANCOVA\b",  # Analysis of Covariance
+        r"\bt-test\b",
+        r"\bpaired t-test\b",
+        r"\bwhitney\b",
+        r"\bwilcoxon\b",
+        r"\bchi-square\b",
+        # Non-parametric methods
+        r"\bKruskal-Wallis\b",
+        r"\bSpearman(?:'s)? correlation\b",
+        r"\bPearson(?:'s)? correlation\b",
+        # Specialized methods for phenotypic data
+        r"\bmorphometric analys(?:is|es)\b",
+        r"\bgeometric morphometrics\b"
+    ],
+    # Phenotypic phylogenetic methods
+    "phen_pylo": [
+        r"\bmatrix\b",                # Data matrices, important in both contexts
+        r"\bcladistic(?:s)?\b",       # Cladistics, common in morphology
+        r"\bhomoplasy\b",             # Trait similarity not due to shared ancestry
+        r"\bautapomorph(?:y|ies)\b",  # Unique derived traits
+        r"\bplesiomorph(?:y|ies)\b",  # Ancestral traits
+    ],
+    # Genetic data types
+    "nuclear": [
+        r"\bnuclear\b",               # General reference to nuclear DNA
+        r"\b18s\b",         # Common nuclear marker gene
+        r"\b28s\b",         # Another common nuclear ribosomal gene
+        r"\brag1\b",                      # Recombination-activating gene 1
+        r"\brag2\b",                      # Recombination-activating gene 2
+        r"\bits(?:[ _]region)?\b",        # Internal transcribed spacer (ITS) region
+        r"\bef1(?:-alpha)?\b",            # Elongation factor 1-alpha
+        r"\bh3\b",                        # Histone H3 gene
+        r"\bh4\b",                        # Histone H4 gene
+        r"\btub(?:ulin)?\b",              # Tubulin genes, such as alpha and beta tubulin
+        r"\bgapdh\b",                     # Glyceraldehyde-3-phosphate dehydrogenase
+        r"\brpb1\b",                      # RNA polymerase II subunit 1
+        r"\brpb2\b",                      # RNA polymerase II subunit 2
+        r"\brna polymerase\b",            # General reference to RNA polymerase genes
+    ],
+    "organellar": [
+        r"\borganellar dna\b",
+        r"\bmitochondrial dna\b",
+        r"\bchloroplast dna\b",
+        r"\bplastid dna\b"
+    ],
+    "transcriptomic": [
+        r"\borganellar\b",           # General organellar DNA reference
+        r"\bmitochondrial\b",        # Specific to mitochondrial DNA
+        r"\bchloroplast\b",          # Specific to chloroplast DNA
+        r"\bplastid\b",              # Broad reference to plastid DNA
+        r"\bplastome\b",                 # Alternative term for plastid genome
+        r"\bcytochrome(?: oxidase)?\b",  # Cytochrome genes often mitochondrial (e.g., COX1, COX2)
+        r"\bcox(?:1|2|3)?\b",            # Cytochrome oxidase subunits (COX1, COX2, COX3)
+        r"\bcox(?:i)?\b",
+        r"\bnad(?:[1-9]|[0-9]+)?\b",     # NADH dehydrogenase subunits, mitochondrial
+        r"\bmatk\b",                     # Maturase K, chloroplast gene
+        r"\brbc(?:l|s)\b",               # Ribulose-bisphosphate carboxylase (chloroplast gene)
+        r"\batp(?:a|b|e|f|h|i)?\b",      # ATP synthase subunits (common in both chloroplast and mitochondria)
+        r"\bpsa(?:a|b)?\b",              # Photosystem I genes, chloroplast
+        r"\bpsb(?:a|b|c|d|e|f|h|k)?\b", # Photosystem II genes, chloroplast
+    ],
+    "proteomic": [
+        r"\bproteom(?:ic|e|ics)\b",
+        r"\bprotein expression\b",
+        r"\bprotein analysis\b",
+        r"\allozyme analysis\b",
+        r"\bmass spectrometry\b",          # A key proteomics technique
+        r"\bwestern blot(?:ting)?\b",      # Western blot for protein detection
+        r"\bimmunoblot(?:ting)?\b",        # Immunoblotting, a protein-specific technique
+        r"\bproteomic marker\b",           # Proteomic markers in studies
+        r"\bfunctional proteomics\b",      # Functional studies on proteins
+    ],
+    "tandem_repeats": [
+        r"\btandem repeats\b",           # General reference to tandem repeats
+        r"\bmicrosatellite(?:s)?\b",          # Microsatellites, a type of tandem repeat
+        r"\bshort tandem repeat(?:s)?\b",     # STR (full form)
+        r"\bSTR\b",                      # Short Tandem Repeat abbreviation
+        r"\bsimple sequence repeats\b",  # SSR, another term for tandem repeats
+        r"\bSSR\b",                      # Abbreviation for simple sequence repeats
+        r"\bminisatellite(?:s)?\b",           # Larger tandem repeats
+        r"\bsatellite dna\b",            # Broader category for tandem repeats
+        r"\bvariable number tandem repeats\b", # VNTR, another repeat type
+        r"\bVNTR\b",                     # Abbreviation for variable number tandem repeats
+        r"\brepeat region(?:s)?\b",           # General phrase for regions with repeats
+        r"\bmultilocus microsatellite(?:s)?\b",# Specific to microsatellite analysis
+    ],
+    "whole_genomes": [
+        r"\bwhole genomes\b",
+        r"\bwhole genome sequencing\b",
+        r"\bgenome-wide\b",
+        r"\bgenome assembly\b",              # Refers to assembling whole genomes
+        r"\bGWAS\b",                         # Abbreviation for genome-wide association studies
+        r"\bphylogenomic(?:s)?\b",           # Phylogenomic studies based on whole genomes
+        r"\bmetagenomic\b",                  # Reference to metagenomic studies
+        r"\bgenome mapping\b",               # Refers to mapping genomic features
+    ],
+    "exomes": [
+        r"\bexome(?:s)?\b",
+    ],
+    "genome_wide": [
+        r"\bgenome-wide data\b",
+        r"\bGWAS\b",
+        r"\bgenome scale\b"
+    ],
+    "epigenetic": [
+        r"\bepigenetic data\b",
+        r"\bepigenomics\b",
+        r"\bDNA methylation\b",
+        r"\bhistone modification\b"
+    ],
+    "eDNA": [
+        r"\benvironmental dna\b",
+        r"\bedna\b",
+        r"\benvironmental genetic material\b"
+    ],
+    # Taxonomic methods
+    "chemotax": [
+        r"\bchemotaxonomy\b",               # General term for chemotaxonomy
+        r"\bchemical taxonomy\b",           # Alternate phrasing
+        r"\bchemotaxonomic\b",              # Adjective form
+        r"\bchemical markers\b",            # Common term in chemotaxonomic studies
+        r"\bsecondary metabolite(?:s)?\b",       # Key focus in chemotaxonomy
+        r"\balkaloid(?:s)?\b",                   # Common class of secondary metabolites
+        r"\bflavonoid(?:s)?\b",                  # Another important class of metabolites
+        r"\bphenolic compounds\b",          # Phenolics used in chemical taxonomy
+        r"\bessential oil(?:s)?\b",              # Often used in plant chemotaxonomy
+        r"\blipid profile(?:s)?\b",              # Lipids as markers in chemotaxonomy
+        r"\bchemical composition(?:s)?\b",        # Broader reference to chemical analysis
+        r"\bmetabolite profil(?:e|ing)\b",        # Profiling metabolites in chemotaxonomy
+        r"\bphytochemical analys(?:is|es)\b",      # Analysis of plant chemicals
+        r"\bchemical diversity\b",          # Diversity of chemicals in taxa
+        r"\bmetabolomic(?:s)?\b",                # Systematic study of metabolites
+        r"\bchemical fingerprint(?:s)?\b",        # Chemical fingerprints for identification
+        r"\bbiochemical marker(?:s)?\b",         # Biochemical indicators in taxonomy
+    ],
+    "cytotax": [
+        r"\bcytotaxonom(?:y|ic)\b",               # Core term for cytotaxonomy
+        r"\bchromosomal\b",       # Alternate phrasing
+        r"\bkaryotype\b",                  # Key concept in cytotaxonomy
+        r"\bchromosome(?:s)?\b",          # Specific focus in cytotaxonomy
+        r"\bpolyploid(:?y)?\b",                 # Important concept in cytotaxonomy
+        r"\bploidy level\b",               # Ploidy as a focus of study
+        r"\bcytogenetic(?:s)?\b",               # Field overlapping with cytotaxonomy
+        r"\bmeiotic behavior\b",           # Study of meiosis in taxonomy
+        r"\bcentromere\b",                 # Important chromosome region
+        r"\btelomere\b",                   # End regions of chromosomes
+        r"\bfluorescent in situ hybridization\b",  # FISH technique used in chromosome studies
+        r"\bFISH\b",                       # Abbreviation for the above
+    ],
+    # Sequencing methods
+    "SEQUENCING": [
+        r"\bsequencing\b",                 # General reference to sequencing
+        r"\bsequence alignment\b",         # Analysis step, independent of generation
+        r"\bsequenced\b",           # Refers to a genome that has been sequenced
+        r"\bsequencing error\b",           # Reference to errors in sequencing
+    ],
+    "gen1": [
+        r"\bSanger sequencing\b",             # The most common term for first-gen sequencing
+        r"\bchain termination sequencing\b",  # Alternative name for Sanger sequencing
+        r"\bdideoxy sequencing\b",            # Another term for Sanger's method
+        r"\bmanual sequencing\b",             # Refers to early manual gel-based sequencing
+        r"\bradiolabeled sequencing\b",       # Refers to the use of radiolabels in early Sanger methods
+        r"\bcapillary electrophoresis\b",     # Technology used in automated Sanger sequencing
+        r"\bchromatogram\b",                  # Data output unique to Sanger sequencing
+        r"\bdideoxynucleotide\b",             # Key component of Sanger sequencing chemistry
+        r"\bdNTP\b",                          # Abbreviation for deoxynucleotide triphosphates
+        r"\bdye terminator\b",                # Fluorescent dyes used in automated Sanger sequencing
+        r"\brunoff sequencing\b",             # Specific to first-gen sequencing methods
+        r"\bABI sequencer\b",                 # Popular automated sequencer for Sanger
+        r"\bBigDye\b",                        # Dye terminator chemistry specific to Sanger
+        r"\bchain elongation\b",              # A step in the Sanger sequencing process
+        r"\bprimer walking\b",                # Method to sequence long DNA regions using Sanger
+        r"\bshotgun sequencing\b",            # Early whole-genome sequencing strategy using Sanger
+        r"\bradiolabeled primers\b",          # Used in early Sanger protocols
+    ],
+    "gen2": [
+        r"\bnext-generation sequencing\b",  # Common term for second-gen sequencing
+        r"\bNGS\b",                         # Abbreviation for Next-Generation Sequencing
+        r"\bmassively parallel sequencing\b", # Core concept of second-gen sequencing
+        r"\bhigh-throughput sequencing\b",  # Refers to the scale of data generation
+        r"\bIllumina\b",                    # Most widely used second-gen platform
+        r"\bSolexa\b",                      # Early name for Illumina technology
+        r"\bRoche 454\b",                   # Another second-gen platform
+        r"\bpyrosequencing\b",              # Sequencing chemistry used by Roche 454
+        r"\bsequencing by synthesis\b",     # Chemistry used in Illumina platforms
+        r"\bsequencing by ligation\b",      # Chemistry used by SOLiD platforms
+        r"\bSOLiD\b",                       # Platform from Applied Biosystems
+        r"\bshort-read sequencing\b",       # Characteristic of second-gen platforms
+        r"\bpaired-end sequencing\b",       # Common second-gen sequencing strategy
+        r"\bfragment library\b",            # Libraries used for second-gen sequencing
+        r"\bamplification-based sequencing\b", # Refers to the amplification step in NGS
+        r"\bcluster generation\b",          # Key step in Illumina sequencing
+        r"\bbridge amplification\b",        # Technology used in Illumina sequencing
+        r"\bemPCR\b",                       # Emulsion PCR used in 454 and SOLiD
+        r"\badaptor ligation\b",            # Step in library preparation for second-gen platforms
+        r"\bflow cell\b",                   # Platform for sequencing reactions (e.g., Illumina)
+        r"\bsequencing depth\b",            # Term relevant to second-gen sequencing
+        r"\bindex sequencing\b",            # Indexing used in second-gen multiplexing
+    ],
+    "gen3": [
+        r"\bthird-generation sequencing\b",   # General term for third-gen sequencing
+        r"\bTGS\b",                           # Abbreviation for third-generation sequencing
+        r"\blong-read sequencing\b",          # Core feature of third-gen platforms
+        r"\bsingle-molecule sequencing\b",    # Key distinguishing technology
+        r"\bPacBio\b",                        # Pacific Biosciences platform
+        r"\bSMRT sequencing\b",               # Single-Molecule Real-Time sequencing (PacBio)
+        r"\bNanopore\b",                      # Oxford Nanopore platform
+        r"\bONT\b",                           # Abbreviation for Oxford Nanopore Technologies
+        r"\bMinION\b",                        # Specific Oxford Nanopore device
+        r"\bPromethION\b",                    # Oxford Nanopore high-throughput device
+        r"\bGridION\b",                       # Oxford Nanopore mid-throughput device
+        r"\breal-time sequencing\b",          # Real-time sequencing, a feature of third-gen
+        r"\bdirect RNA sequencing\b",         # RNA sequencing without cDNA synthesis
+        r"\bdirect sequencing\b",             # Sequencing without amplification
+        r"\bconsensus sequencing\b",          # Used to correct errors in long-read data
+        r"\bcircular consensus sequencing\b", # PacBio technique for improving accuracy
+        r"\bzero-mode waveguide\b",           # ZMW technology used in PacBio
+        r"\bzmw\b",                           # Abbreviation for zero-mode waveguide
+        r"\bpore-based sequencing\b",         # Refers to nanopore sequencing
+        r"\bsingle-molecule real-time\b",     # Full phrase for SMRT sequencing
+        r"\bsubreads\b",                      # Output of PacBio reads
+        r"\braw signal data\b",               # Data type unique to Nanopore sequencing
+        r"\blong-range sequencing\b",         # Often used synonymously with long-read sequencing
+    ],
+    # Genetic distance
+    "distance": [
+        r"\bgenetic distance\b",               # General term for genetic distance
+        r"\bgenetic divergence\b",             # General term for divergence
+        r"\bsequence divergence\b",            # Divergence at the sequence level
+        r"\ballelic distance\b",               # Distance based on alleles
+        r"\bp-distance\b",                     # Proportion of differing sites
+        r"\bJukes-Cantor distance\b",          # Specific genetic distance model
+        r"\bKimura (?:2-parameter|distance)\b", # Kimura two-parameter model
+        r"\bHamming distance\b",               # General sequence comparison measure
+        r"\bManhattan distance\b",             # City-block distance applied in genetics
+        r"\bMahalanobis distance\b",           # Multivariate genetic distance
+        r"\bpairwise distance\b",              # Pairwise comparisons of genetic data
+        r"\bgenetic similarity\b",             # Opposite concept to distance
+        r"\bdistance matrix\b",                # Matrix of genetic distances
+        r"\bUPGMA\b",                          # Method using genetic distance
+        r"\bNeighbor-Joining\b",               # NJ tree building from genetic distances
+    ],
+
+    # Haplowebs
+    "haplowebs": [
+        r"\bhaplowebs\b",                     # Core term for haplowebs
+        r"\bhaplotype networks\b",            # Common term for haplotype networks
+        r"\bhaplotype web\b",                 # Alternate phrasing
+        r"\bmedian-joining network\b",        # A popular method for constructing haplotype networks
+        r"\bminimum spanning network\b",      # Another common network construction method
+        r"\bparsimony network\b",             # Refers to haplotype network methods based on parsimony
+        r"\bnetwork-based haplotypes\b",      # General term for network-based approaches
+        r"\bhaplotype sharing\b",             # Sharing of haplotypes in populations
+        r"\bhaplotype diversity\b",           # Diversity metrics relevant to haplowebs
+        r"\bhaplotype connectivity\b",        # Describes connections in a haplotype network
+        r"\bhaplotype clustering\b",          # Clustering of haplotypes in a network
+        r"\ballelic networks\b",              # Broader reference to allelic or haplotype networks
+        r"\bpopart\b",                        # Software commonly used for constructing haplotype networks
+        r"\bTCS network\b",                   # Method/software for haplotype networks
+    ],
+    # Fixed alternative character states
+    "fixed_alt_states": [
+        r"\bfixed alternative character states\b",    # Core term
+        r"\bfixed characters\b",                      # Shorter version
+        r"\balternative character states\b",          # General term
+        r"\bdiscrete character states\b",             # Discrete trait states
+        r"\bdiagnostic characters\b",                 # Characters used diagnostically
+        r"\bfixed traits\b",                          # Fixed traits in populations
+        r"\bpolymorphic characters\b",                # Contrasts fixed states with polymorphic states
+        r"\bcharacter state transformation\b",        # Refers to changes between states
+        r"\bcharacter matrix\b",                      # Often associated with character states
+        r"\bcharacter coding\b",                      # Refers to coding of alternative states
+    ],
+    # Clustering methods
+    "clustering": [
+        r"\bclustering methods\b",
+        r"\bcluster analysis\b",
+        r"\bhierarchical clustering\b"
+    ],
+    # Genetic interbreeding studies
+    "gen_interbr": [
+        r"\bmolecular interbreeding\b",       # Core term
+        r"\bgenetic interbreeding\b",                 # General genetic reference
+        r"\bmolecular hybridization\b",               # Key method in interbreeding studies
+        r"\bintrogression\b",                         # Gene flow between populations
+        r"\bhybridization studies\b",                 # General reference to hybridization research
+        r"\bhybrid populations\b",                    # Result of interbreeding
+        r"\bmolecular admixture\b",                   # Admixture at a molecular level
+        r"\bmolecular gene flow\b",                   # Gene flow studied at the molecular level
+        r"\bgenomic hybridization\b",                 # Hybridization studies using genomic data
+        r"\bgenetic exchange\b",                      # Exchange of genetic material
+    ],
+    # Phylogenetic species delimitation
+    "PHYLO_SD": [
+        r"\bspecies delimitation\b",             # General term for species delimitation
+        r"\bGMYC\b",                             # Generalized Mixed Yule Coalescent method
+        r"\bGeneralized Mixed Yule Coalescent\b", # Full name of GMYC
+        r"\bPTP\b",                              # Poisson Tree Processes method
+        r"\bPoisson Tree Processes\b",           # Full name of PTP
+        r"\bABGD\b",                             # Automatic Barcode Gap Discovery
+        r"\bAutomatic Barcode Gap Discovery\b",  # Full name of ABGD
+        r"\bBPP\b",                              # Bayesian Phylogenetics and Phylogeography
+        r"\bBayesian Phylogenetics and Phylogeography\b", # Full name of BPP
+        r"\bcoalescent-based delimitation\b",    # General term for coalescent approaches
+        r"\bSTACEY\b",                           # Species Tree and Classification Estimation, Yarely
+        r"\bspecies tree(?:s)\?b",             # Methods using species trees for delimitation
+        r"\bmultispecies coalescent\b",          # Multispecies coalescent framework
+        r"\bspecies partitioning\b",             # Alternative term for delimitation
+    ],
+    # Distance-based phylogenetic methods
+    "distance_based": [
+        r"\bdistance-based (?:phylogenetic )?tree inference\b", # Core term for tree inference
+        r"\bdistance-based tree\b",                       # General term for distance-based trees
+        r"\bneighbor-joining\b",                          # Common distance-based method
+        r"\bUPGMA\b",                                     # Unweighted Pair Group Method with Arithmetic Mean
+        r"\bgenetic distance tree\b",                     # Specific term for trees using genetic distances
+        r"\bFitch-Margoliash\b",                          # Another distance-based phylogenetic method
+        r"\bgenetic similarity tree\b",                   # Alternative term for similarity-based methods
+    ],
+    # Character-based phylogenetic methods
+    "character_based": [
+        r"\bcharacter-based tree inference\b",           # Core term for character-based inference
+        r"\bcharacter-based phylogeny\b",                # General term for character-based phylogenies
+        r"\bmaximum parsimony\b",                        # Maximum parsimony method
+        r"\bBayesian inference\b",                       # Bayesian phylogenetic methods
+        r"\bparsimony analysis\b",                       # General term for parsimony-based analysis                                  
+        r"\bmaximum likelihood\b",                       # Maximum likelihood inference
+        r"\bML\b"
+    ],
+    # Consensus and supertree methods
+    "consensus_supertree": [
+        r"\bconsensus phylogenetic tree\b",
+        r"\bsupertree phylogenetic tree\b",
+        r"\bconsensus tree\b"
+    ],
+    # Machine learning methods
+    "MACHINE_LEARNING": [
+        r"\bmachine learning\b",
+        r"\bML analysis\b",
+        r"\bAI molecular analysis\b",
+        r"\bdeep learning\b",
+        r"\bsupervised learning\b"
+    ],
+    # Interbreeding
+    "interbreeding": [
+        r"\binterbreeding\b",
+        r"\bhybridization\b",
+        r"\breproductive\b",
+        r"\bgene flow\b"
+    ],
+    # Taxonomic rank justification
+    "rank_just": [
+        r"\bspecies concept\b",
+    ],
+    # Phylogenetic thinking
+    "phylogenetic": [
+        r"\bphylogenetic\b",
+        r"\bhomolog(?:ous|e)\b",
+        r"\bcladistic(?:s)?\b",       # Cladistics, common in morphology
+        r"\bhomoplasy\b",             # Trait similarity not due to shared ancestry
+        r"\bautapomorph(?:y|ies)\b",  # Unique derived traits
+        r"\bplesiomorph(?:y|ies)\b",  # Ancestral traits
+    ],
+    # Specimen storage location
+    "specimen_storage_loc": [
+        r"\bspecimen storage location\b",
+        r"\bstored in\b",
+        r"\bmuseum\b",
+        r"\bcollection\b",
+        r"\bprepository\b"
+    ],
+    # Sampling location
+    "sampling_loc": [
+        r"\bsampling location\b",
+        r"\bcollection site\b",
+        r"\bwere collected in\b",
+        r"\btype locality\b",
+
+    ],
+    # Abbreviations and terms
+    "abbrev_terms": [
+        r"\babbreviations\b",
+        r"\bterms\b",
+        r"\bglossary\b",
+        r"\bshortened forms\b",
+        r"\bdefinitions\b"
+    ],
+    # Nomenclatural history
+    "nomenclat_history": [
+        r"\bnomenclatural history\b",
+        r"\bname changes\b",
+        r"\bsynonym\b"
+    ],
+    # Biogeography
+    "biogeo": [
+        r"\bbiogeography\b",                        # Core term for biogeography
+        r"\bspatial ecology\b",                     # Overlap with ecological distribution
+        r"\bdistribution pattern(?:s)?\b",               # Patterns of species distribution
+        r"\bphylogeography\b",                      # Biogeographical analysis combined with phylogenetics
+        r"\bvicariance\b",                          # Key concept in biogeography
+        r"\bdispersal\b",                           # Another fundamental biogeographical process
+        r"\brange expansion\b",                     # Describes species expanding their geographical range
+        r"\bendemism\b",                            # Species restricted to specific regions
+        r"\bbiogeographical barriers\b",            # Barriers affecting species distribution
+        r"\bdiversity gradient(?:s)?\b",                 # Variation in diversity across geographical regions
+        r"\barea cladogram\b",                      # Cladograms mapping species to geographical areas
+        r"\bdispersal-vicariance analysis\b",       # Common biogeographical method
+        r"\bDIVA\b",                                # Software for dispersal-vicariance analysis
+        r"\bancestral range reconstruction\b",      # Reconstructing historical ranges of species
+        r"\bbiogeographical reconstruction\b",      # General term for reconstructing biogeographical history
+        r"\bhabitat connectivity\b",                # Connectivity between habitats affecting distributions
+        r"\bspatial distribution\b",                # General spatial term
+        r"\becoregion\b",                           # Biogeographical region concept
+        r"\bspecies dispersal\b",                   # Refers to species' movement across areas
+    ]
+    
+}
