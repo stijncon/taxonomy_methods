@@ -1,0 +1,105 @@
+{
+    "PHENOTYPE": [
+        {
+            "Phen_data": [
+                {"MORPH": 
+               [ "quant_morph","interbr_morph",
+                {
+                    "qual_morph": [
+                        "color_pattern", 
+                        "shape", 
+                        "texture", 
+                        "ultrastruct", 
+                        
+                    ]
+                }]},
+                {
+                    "BEHAV": [
+                        "acoustic", 
+                        "feeding", 
+                        "mating"
+                    ]
+                },
+                "ECOLOGY"
+                            ]
+        },
+        {
+            "Phen_proc": [
+                "IMAGING",
+                "SAMPLING",
+                "STORAGE"
+            ]
+        },
+        {
+            "Phen_analysis": [
+                "phen_nonphylo",
+                "phen_pylo"
+            ]
+        }
+    ],
+    "GENOTYPE": [
+        {
+            "Gen_data": [
+                "nuclear",
+                "organellar",
+                "transcriptomic",
+                "proteomic",
+                "tandem_repeats",
+                "whole_genomes",
+                "exomes",
+                "genome_wide",
+                "epigenetic",
+                "eDNA",
+                {
+                    "BIOCHEM": [
+                        "chemotax", 
+                        "cytotax"
+                    ]
+                }
+            ]
+        },
+        {
+            "Gen_proc": [
+                {"SEQUENCING": ["gen1", 
+                "gen2", 
+                "gen3"]},
+                "genproc_other"
+                
+                
+            ]
+        },
+        {
+            "Gen_analysis": [
+                {
+                    "GEN_NON_PHYLO": [
+                        "distance", 
+                        "haplowebs", 
+                        "fixed_alt_states", 
+                        "clustering", 
+                        "gen_interbr"
+                    ]
+                },
+                 "PHYLO_SD",
+                    
+                {
+                    "PHYLO_TREE": [
+                        "distance_based", 
+                        "character_based",
+                         "consensus_supertree",
+                    ]
+                },
+                "MACHINE_LEARNING"
+            ]
+        }
+    ],
+    "Singletons": [
+        "interbreeding", 
+        "rank_just", 
+        "phylogenetic", 
+        "specimen_storage_loc", 
+        "sampling_loc", 
+        "abbrev_terms", 
+        "nomenclat_history",
+        "biogeo"
+    ]
+}
