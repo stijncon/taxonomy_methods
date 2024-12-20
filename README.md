@@ -1,12 +1,25 @@
-# General
-code for the project of classifying taxonomy papers by the methods they employ.
+# Overview of the project
 
-# Isolating methods sections and paragraphs
-We isolated the methods sections and paragraphs with code written separately for each of the journals in our corpus. This is far from perfect -- quite a few of the paragraphs have sentences missing or are merged with other paragraphs. This is due to inconsistenties in the way the pdfs are built. We checked 100 random paragraphs, and found that 5 were not as they should be, and considered this an acceptable rate. Given that it is about the words in the paragraphs in the first place (except for the one shot classification with LLMs), it probably doesn't matter for the classifiers.
+The aim of this project is to check how taxonomic methods are distributed across taxonomy, and what they are associated to. Very exploratory for now, but we might preregister when the classifier is finished and we check associations with other variables.
 
-# Topic Models
-We first explored the data with various topic models, which informed the classification we designed. We also used this to get samples to train some of the classifiers.
+Involved in the project: Stijn Conix, Marlies Monnens, Laura Vanstraelen (annotating), Jhoe Rheyes (annotating), Tom Artois, Charles Pence
 
-# Data annotation
+# Step 1: Isolating methods sections and paragraphs
 
-3 annotators read and annotate paragraphs using potato.
+We isolated the methods sections and paragraphs with code written separately for each of the journals in our corpus (see TM_IsolateMethods). This is far from perfect and quite messy -- quite a few of the paragraphs have sentences missing or are merged with other paragraphs. This is due to inconsistenties in the way the pdfs are built. We checked 100 random paragraphs, and found that 10 were not as they should be, and considered this an acceptable rate. Given that it is about the words in the paragraphs in the first place (except for the one shot classification with LLMs), it probably doesn't matter too much for the classifiers. 
+
+# Step 2:Topic Models & classification design
+
+Given that we want to classify taxonomic methods, we need a classification of those methods. To make this, we first explored the data with various topic models (TM_MakeTopicModels, TM_ExploreTopicModels) to get an idea of which categories of methods were prevalent. On the basis of this, Marlies and Stijn made various iterations of a hierarchical classification, which we then also checked with other taxonomists, to get a final hierarchical classification (classif.txt). 
+
+# Step 3: Data annotation
+
+In order to build and test classifiers, we need annotated paragraphs. The classifier will need to be a multi-label one, as many paragraphs refer to various methods. We don't have the funds or time to have a large annotated set of paragraphs, but are aiming for 1500-2000. In a first step, Marlies and Stijn both annotated 100 paragraphs, fine-tuned the classification on the basis of that, and made an [annotation guide](https://docs.google.com/document/d/1V2W2QhHtWv73Ve4rWGEoNlSt3c20y1jzv7sv_Sr1LN0/edit?usp=sharing) Laura, Jhoe, Stijn and Marlies all annotated paragraphs, with around half of the samples annotated by more than one person ( 20/12/2024 total: 1200). All annotations are done using a custom made script in [potato](https://potato-annotation.readthedocs.io/en/latest/) (config-short). 
+
+# Step 4: Baseline classifiers
+
+We will not have enough annotated data to train a good transformer model. Instead, we will train a range of baseline-classifiers (TM_BaselineClassifiers) and get a regex baseline (TM_testRegex and regex_patterns). We will compare these with one-shot and few-shot classifications using an LLM (GTP_annotation_instructionsV1 and GTP_category_listV1). Our expectation is that, given the enourmous amount of background knowledge that is required, the few-shot LLM classification (or some similar prompting method) will outperform the baselines. It is unclear at this point which LLM we will use (we have experimented a bit with GTP4, and that seems very powerful).
+
+# Step 5: Choose classifiers for the entire corpus
+
+On the basis of the tests with the annotated data, we use one or multiple classifiers over the entire corpus. This will allow us to associate the use of taxonomic methods with a range of variables that we already have, such as disagreement, taxa, geography (?),...
