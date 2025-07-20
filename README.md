@@ -2,7 +2,7 @@
 
 The aim of this project is to check how taxonomic methods are distributed across taxonomy, and what they are associated to. Very exploratory for now, but we might preregister when the classifier is finished and we check associations with other variables.
 
-Involved in the project: Stijn Conix, Marlies Monnens, Laura Vanstraelen (annotating), Jhoe Rheyes (annotating), Tom Artois, Charles Pence
+Involved in the project: Stijn Conix, Marlies Monnens, Laura Vanstraelen, Jhoe Rheyes (annotating), Tom Artois, Charles Pence
 
 # Step 1: Isolating methods sections and paragraphs
 
