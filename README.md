@@ -18,7 +18,7 @@ In order to build and test classifiers, we need annotated paragraphs. The classi
 
 # Step 4: Baseline classifiers
 
-We will not have enough annotated data to train a good transformer model. Instead, we will train a range of baseline-classifiers (TM_BaselineClassifiers) and get a regex baseline (TM_testRegex and regex_patterns). We will compare these with one-shot and few-shot classifications using an LLM (GTP_annotation_instructionsV1 and GTP_category_listV1). Our expectation is that, given the enourmous amount of background knowledge that is required, the few-shot LLM classification (or some similar prompting method) will outperform the baselines. It is unclear at this point which LLM we will use (we have experimented a bit with GTP4, and that seems very powerful).
+We start by getting a regex baseline (TM_testRegex and regex_patterns). Then we compare various classic supervised learning models, and choose the best one (TM_testBaselineClassifiers). Then we tune the best one (TM_LogisticRegression). Then we try out transformer models (TM_SciBERT_DistilBERT), even though we have very limited data. We will compare these classifiers with zero-shot classification using an LLM (GTP_annotation_instructionsV1 and GTP_category_listV1, TM_GPTApi). Our expectation is that, given the enourmous amount of background knowledge that is required, the zero-shot LLM classification will outperform the other classifiers.
 
 # Step 5: Choose classifiers for the entire corpus
 
