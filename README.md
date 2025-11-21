@@ -1,3 +1,5 @@
+**Note: this project is on hold, and not actively being worked on anymore. It's main purpose was academic transparency and versioning over the course of the research project. Please be careful in using any of the (unfinished) code or models.**
+
 # Overview of the project
 
 The aim of this project is to check how taxonomic methods are distributed across taxonomy, and what they are associated to. Very exploratory for now, but we might preregister when the classifier is finished and we check associations with other variables.
