@@ -1,4 +1,4 @@
-**Note: this project is on hold, and not actively being worked on anymore. It's main purpose was academic transparency and versioning over the course of the research project. Please be careful in using any of the (unfinished) code or models.**
+**Note: this project is on hold, and not actively being worked on anymore. Its main purpose was academic transparency and versioning over the course of the research project. Please be careful in using any of the (unfinished) code or models.**
 
 # Overview of the project
 
