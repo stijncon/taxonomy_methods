@@ -2,7 +2,7 @@
 
 # Overview of the project
 
-The aim of this project is to check how taxonomic methods are distributed across taxonomy, and what they are associated to. Very exploratory for now, but we might preregister when the classifier is finished and we check associations with other variables.
+The aim of this project is to check how taxonomic methods are distributed across taxonomy, and what they are associated to. Very exploratory for now, but we might preregister when the classifier is finished and we check associations with other variables. For more (and more up to date) code related to this broader project, see [here](https://codeberg.org/pencelab/biodiversity-disagreement).
 
 Involved in the project: Stijn Conix, Marlies Monnens, Laura Vanstraelen, Jhoe Rheyes (annotating), Tom Artois, Charles Pence
 
